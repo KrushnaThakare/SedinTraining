@@ -72,5 +72,10 @@ public class TC_LogIn_001 extends baseClass{
 		Thread.sleep(5000);
 		
 		lp.searchMob("Iphone13");
+		lp.mobNames();
+		assertTrue(true);
 	}
+	
+	
+	
 }

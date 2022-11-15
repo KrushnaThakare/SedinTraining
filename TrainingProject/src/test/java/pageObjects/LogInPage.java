@@ -1,11 +1,13 @@
 package pageObjects;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -36,11 +38,15 @@ public class LogInPage {
 	@FindBy(id="nav-logo-sprites")
 	WebElement logo;
 	
-	@FindBy(xpath="//div[@class='nav-search-field ']")
+	@FindBy(id="twotabsearchtextbox")  //  nav-search-field 
 	WebElement searchBar;
+	
 	
 	@FindBy(id="nav-search-submit-button")
 	WebElement searchButton;
+	
+	@FindBy(xpath="//span[@class='a-size-medium a-color-base a-text-normal']")
+	List<WebElement> mob;
 	
 	public void setUsername(String userId)
 	{
@@ -67,13 +73,22 @@ public class LogInPage {
 	}
 	public void searchMob(String s)
 	{
-		//WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(10));
-		//wait.until(ExpectedConditions.visibilityOf(searchBar));
+		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOf(searchBar));
 		
-		JavascriptExecutor executor = (JavascriptExecutor) ldriver;
-	    executor.executeScript("arguments[0].scrollIntoView(true);", searchBar);
+		//JavascriptExecutor executor = (JavascriptExecutor) ldriver;
+	    //executor.executeScript("arguments[0].scrollIntoView(true);", searchBar);
 		searchBar.sendKeys(s);
 		searchButton.click();
+	}
+	
+	public void mobNames()
+	{
+		for(WebElement name:mob)
+		{
+			System.out.println(name.getText());
+		}
+		
 	}
 	
 	
