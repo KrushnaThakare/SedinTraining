@@ -9,35 +9,12 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test1</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">24,841</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test1</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">32,055</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testCases.TC_LogIn_001</td><td><a href="#m0">searchMobile</a></td><td rowspan="1">1668411431820</td><td rowspan="1">6287</td></tr><tr><th colspan="4">Test1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">testCases.TC_LogIn_001</td><td><a href="#m1">LogInTest</a></td><td rowspan="1">1668411416504</td><td rowspan="1">5961</td></tr><tr class="passedeven"><td><a href="#m2">logoDisplayed</a></td><td rowspan="1">1668411424218</td><td rowspan="1">5751</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">testCases.TC_LogIn_001</td><td><a href="#m0">LogInTest</a></td><td rowspan="1">1668498054296</td><td rowspan="1">8455</td></tr><tr class="passedeven"><td><a href="#m1">logoDisplayed</a></td><td rowspan="1">1668498065548</td><td rowspan="1">6007</td></tr><tr class="passedeven"><td><a href="#m2">searchMobile</a></td><td rowspan="1">1668498074198</td><td rowspan="1">8156</td></tr></tbody>
 </table>
-<h2>Test1</h2><h3 id="m0">testCases.TC_LogIn_001#searchMobile</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=107.0.5304.89)
-Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;RFL666&apos;, ip: &apos;192.168.1.20&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a000e084c84de9bb1fa10c3d4f9a150b, sendKeysToElement {id=f587a47e-4e6d-4bf4-b305-e33c603ee60f, value=[Ljava.lang.CharSequence;@75181b50}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.89, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\KRUSHN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52920}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52920/devtoo..., se:cdpVersion: 107.0.5304.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (a000e084c84de9bb1fa10c3d4f9a150b)] -&gt; xpath: //div[@class=&apos;nav-search-field &apos;]]
-Session ID: a000e084c84de9bb1fa10c3d4f9a150b
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.sendKeys(Unknown Source)
-	at pageObjects.LogInPage.searchMob(LogInPage.java:75)
-	at testCases.TC_LogIn_001.searchMobile(TC_LogIn_001.java:74)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testCases.TC_LogIn_001#LogInTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testCases.TC_LogIn_001#logoDisplayed</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test1</h2><h3 id="m0">testCases.TC_LogIn_001#LogInTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testCases.TC_LogIn_001#logoDisplayed</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testCases.TC_LogIn_001#searchMobile</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
