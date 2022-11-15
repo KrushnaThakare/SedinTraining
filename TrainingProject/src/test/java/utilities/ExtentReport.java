@@ -29,7 +29,7 @@ import testCases.baseClass;
 
 public class ExtentReport extends TestListenerAdapter{
 
-	public  ExtentSparkReporter htmlreporter;
+	public static  ExtentSparkReporter htmlreporter;
 	public static  ExtentReports extent;
 	public static  ExtentTest test;
 

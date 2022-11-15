@@ -9,9 +9,9 @@
     <classes>
       <class name="testCases.TC_LogIn_001">
         <methods>
+          <include name="LogInTest"/>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="searchMobile"/>
         </methods>
       </class> <!-- testCases.TC_LogIn_001 -->
     </classes>

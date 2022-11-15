@@ -22,7 +22,7 @@ public class TC_LogIn_001 extends baseClass{
 	public void LogInTest() throws InterruptedException
 	{
 
-		//ExtentReport.test=ExtentReport.extent.createTest("LogInTest");
+		ExtentReport.test=ExtentReport.extent.createTest("LogInTest");
 		LogInPage lp= new LogInPage(driver);
 		lp.setUsername(username);
 		lp.clickContinue();
